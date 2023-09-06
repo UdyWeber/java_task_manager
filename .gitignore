@@ -1,0 +1,99 @@
+ipse
+
+.metadata
+
+bin/
+
+tmp/
+
+.settings/
+
+.classpath
+
+.project
+
+
+
+# Maven
+
+target/
+
+*.log
+
+mvnw
+
+mvnw.cmd
+
+.mvn/
+
+
+
+# Logs
+
+logs/
+
+
+
+# IntelliJ IDEA
+
+.idea/
+
+
+
+# Visual Studio Code
+
+.vscode/
+
+
+
+# macOS
+
+.DS_Store
+
+
+
+# Windows
+
+Thumbs.db
+
+
+
+# Gradle
+
+build/
+
+.gradle/
+
+
+
+# IDE-specific
+
+*.iml
+
+*.ipr
+
+*.iws
+
+.idea/
+
+
+
+# Compiled Java classes
+
+*.class
+
+
+
+# Package files
+
+*.jar
+
+*.war
+
+*.ear
+
+
+
+# Dependencies
+
+/lib/
