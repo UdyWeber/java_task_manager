@@ -27,11 +27,13 @@ public class Database {
 				Statement stmt = conn.createStatement();
 		) {
 			String todoTable = """
-        CREATE TABLE IF NOT EXISTS todo (
-          id TEXT PRIMARY KEY,
-          name TEXT NOT NULL,
-          description TEXT NOT NULL
-        );""";
+				CREATE TABLE IF NOT EXISTS todo (
+				  id TEXT PRIMARY KEY,
+				  name TEXT NOT NULL,
+				  description TEXT NOT NULL,
+				  priority int NOT NULL
+				);
+        	""";
 
 			stmt.execute(todoTable);
 		} catch (SQLException e) {
