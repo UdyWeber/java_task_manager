@@ -39,7 +39,7 @@ public class Board {
 
         System.out.println();
 
-        Todo todo = new Todo(taskName, taskDescription);
+        Todo todo = new Todo(taskName, taskDescription, numTaskPriority);
 
         String sql = "INSERT INTO todo (id, name, description, priority) VALUES (?, ?, ?, ?)";
 
