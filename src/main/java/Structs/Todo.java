@@ -1,11 +1,8 @@
 package Structs;
 
 import java.util.UUID;
-import java.util.Vector;
 
 public class Todo {
-    // TODO: IMPLEMENTAR UPDATE
-
     private String id;
     private String name;
     private String description;
@@ -18,11 +15,8 @@ public class Todo {
         this.priority = priority;
     }
 
-    public Todo(Vector<?> rowData) {
-        this.id = (String) rowData.get(0);
-        this.name = (String) rowData.get(1);
-        this.description = (String) rowData.get(2);
-        this.priority = (int) rowData.get(3);
+    public Object[] getAsTableRow() {
+        return new Object[] {this.id, this.name, this.description, this.priority};
     }
 
     public String getName() {

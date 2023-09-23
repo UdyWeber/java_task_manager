@@ -55,12 +55,8 @@ public class GUIApp extends JFrame {
         this.add(OpenTaskButton);
 
         createTaskButton.addActionListener(e -> {
-            System.out.println("Adding Row!");
-            new CreateTaskView();
-
-            Object[] mockData = new Object[]{"mockId", "MockName", "mocksexo", 23};
-
-            getTableModel().addRow(mockData);
+            this.setEnabled(false);
+            new CreateTaskView(this);
         });
 
         tasksTable.getSelectionModel().addListSelectionListener(e -> {
